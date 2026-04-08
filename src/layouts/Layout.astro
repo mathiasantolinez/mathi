@@ -1,7 +1,8 @@
 ---
-import { Icon } from 'astro-icon/components'
-
+import { Icon } from "astro-icon/components";
+import "../styles/global.css";
 ---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -13,22 +14,25 @@ import { Icon } from 'astro-icon/components'
 		<title>Astro Basics</title>
 	</head>
 	<body>
+		<header class="flex justify-between px-16 py-4">
+			<div class="flex">
+				<Icon name="apple" size={24} />
+				<h1 class="font-black">Apple By Mathias Antolinez</h1>
+			</div>
 
-		<header>
-			<Icon name="apple" />
-			<h1>Apple By Mathias Antolinez</h1>
 			<nav>
-				<ul>
-
+				<ul class="flex gap-8">
 					<li><a href="/">Home</a></li>
 					<li><a href="/Catalogo">Catalogo</a></li>
 					<li><a href="/Detalle">Detalle</a></li>
-				<li><a href="/pago">pago</a></li>
-
-
+					<li><a href="/pago">pago</a></li>
 				</ul>
-			
 			</nav>
+
+
+			<div>
+				Iconos
+			</div>
 		</header>
 
 		<slot />
