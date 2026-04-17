@@ -2,82 +2,34 @@
 import Tarjeta from "../components/Tarjeta.astro";
 import Welcome from "../components/Welcome.astro";
 import Layout from "../layouts/Layout.astro";
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
+	<div class="relative overflow-hidden flex flex-col items-center justify-center h-screen">
+		<img class="absolute top-0 left-0 -z-10 w-full" src="fondo.png" alt="" />
+
+		<div>
+			<p class="text-neutral-50">Titaneo robusto y ligero</p>
+
+			<div>
+				<button class="text-neutral-50"> COMPRAR </button>
+
+				<button class="text-neutral-50"> mas informacion </button>
+
+			</div>
+		</div>
+	</div>
 	<section>
 		<div>
-			<p class="flex text-5xl">iPhone</p>
-			<p class="flex text-gray-600">
-				Diseñados para ser amados Potencia y presicion en cada detalle
-			</p>
-		</div>
-	</section>
-
-	<section class="flex flex-wrap">
-		<!-- tarjeta 1 -->
-		 <Tarjeta></Tarjeta>
-		  <Tarjeta></Tarjeta>
-		   <Tarjeta></Tarjeta>
-		    <Tarjeta></Tarjeta>
+			<p>iPhone 15</p>
 		
+			nueva camara. Nuevo diseño Nuevas posibilidades
+		</div>
+		
+		<div>
+		
+			iPhone 14 tan increible  
+		</div>
+
 	</section>
-
-	<!-- <section>
-		<p>Especificaciones de Grado Profesional</p>
-		<div>
-			<div>
-				<p>Rendimiento Externo</p>
-				<p>Chip A17 Pro</p>
-				<p>
-					La mayor revolucion en la historia de las GPU de Apple.
-					Rendimiento Grafico que redefdine el Gaming movil
-				</p>
-				<p>6 nucleos de CPU</p>
-			</div>
-			<p>Fotografia computacional</p>
-			<p>Camara Pro de 48 Mpx</p>
-			<p>varios objetivos en uno. siete lentes profesionales en tu bolsillo</p>
-			<div> </div>
-		</div>
-	</section> -->
 </Layout>
-
-<!-- <section>
-<img src="/iphoen.png" alt="">
-
-</section> -->
-
-<!-- <div>
-	<div> 
-		<div>
-			<p> 24mm</p>
-			<p>principal</p>
-		</div>
-		<div>
-			<p>120mm</p>
-			<p>teleobjetivo</p>
-
-		</div>
-		<div>
-			<p>13mm</p>
-			<p> ultra gran</p>
-		</div>
-
-	</div>
-	<div>
-		<div>
-			icon
-			<p>proRes 4K</p>
-			<p>Graba Directamente en una unidad externa via USB-c.</p>
-		</div>
-		<div>
-			icon
-			<p>USB-C 3</p>
-			<p>Velocidades de transferencia hasta 20 veces mas rapidas.</p>				
-		</div>
-	</div>
-</div> -->
