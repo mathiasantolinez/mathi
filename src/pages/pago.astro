@@ -3,62 +3,215 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-    FINALIZAR PEDIDO
-    <p>Confirma tus productos y detalles de envio.</p>
-    <p>Tu Seleccion</p>
-    <p>iPhone15 Pro Max</p>
+  <section
+        class="bg-gray-50 py-12 px-6 max-w-7xl mx-auto font-sans text-slate-900"
+    >
+        <div class="mb-10">
+            <p class="text-4xl font-bold">Finalizar Pedido</p>
+            <p class="text-gray-500 mt-2 text-lg">
+                Confirma tus productos y detalles de envío.
+            </p>
+        </div>
 
-    <img src="/iphoen15.png" alt="" />
+        <div class="flex flex-col lg:flex-row gap-12">
+            <div class="flex-[2] flex flex-col gap-12">
+                <div>
+                    <p
+                        class="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-4"
+                    >
+                        Tu selección
+                    </p>
+                    <div
+                        class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex items-center justify-between"
+                    >
+                        <div class="flex items-center gap-6">
+                            <div
+                                class="w-20 h-20 bg-orange-100 rounded-xl flex items-center justify-center"
+                            >
+                                <img
+                                    src="/iphone.png"
+                                    alt="iPhone"
+                                    class="w-16"
+                                />
+                            </div>
+                            <div>
+                                <p class="font-bold text-lg">iPhone 15 Pro</p>
+                                <p class="text-gray-400 text-sm italic">
+                                    Titanio Natural, 256GB
+                                </p>
+                                <div
+                                    class="flex items-center gap-4 mt-2 bg-gray-100 w-fit px-3 py-1 rounded-full"
+                                >
+                                    <button class="text-gray-400 text-xs"
+                                        >-</button
+                                    >
+                                    <p class="font-bold text-xs">1</p>
+                                    <button class="text-gray-400 text-xs"
+                                        >+</button
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <p class="font-bold text-xl">1.219,00 €</p>
+                        </div>
+                    </div>
+                </div>
 
-    <p>Dorado natural 512G</p>
+                <div>
+                    <p
+                        class="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-6"
+                    >
+                        Dirección de envío
+                    </p>
+                    <div class="flex flex-wrap gap-6">
+                        <div
+                            class="flex flex-col gap-2 flex-[1_1_calc(50%-1.5rem)] min-w-[280px]"
+                        >
+                            <p
+                                class="text-[10px] font-bold uppercase text-slate-500"
+                            >
+                                Nombre completo
+                            </p>
+                            <input
+                                type="text"
+                                placeholder="Alex Rivera"
+                                class="bg-slate-100 p-4 rounded-xl border-none text-sm outline-none"
+                            />
+                        </div>
 
-    <p>1219,00$</p>
+                        <div
+                            class="flex flex-col gap-2 flex-[1_1_calc(50%-1.5rem)] min-w-[280px]"
+                        >
+                            <p
+                                class="text-[10px] font-bold uppercase text-slate-500"
+                            >
+                                Correo electrónico
+                            </p>
+                            <input
+                                type="email"
+                                placeholder="alex@ejemplo.com"
+                                class="bg-slate-100 p-4 rounded-xl border-none text-sm outline-none"
+                            />
+                        </div>
 
-    - 1 +
-    <p>ELIMINAR</p>
+                        <div class="flex flex-col gap-2 w-full">
+                            <p
+                                class="text-[10px] font-bold uppercase text-slate-500"
+                            >
+                                Dirección
+                            </p>
+                            <input
+                                type="text"
+                                placeholder="Calle, Número, Piso"
+                                class="bg-slate-100 p-4 rounded-xl border-none text-sm outline-none"
+                            />
+                        </div>
 
-    Direcion de envio
+                        <div
+                            class="flex flex-col gap-2 flex-[1_1_calc(50%-1.5rem)] min-w-[140px]"
+                        >
+                            <p
+                                class="text-[10px] font-bold uppercase text-slate-500"
+                            >
+                                Código Postal
+                            </p>
+                            <input
+                                type="text"
+                                placeholder="28001"
+                                class="bg-slate-100 p-4 rounded-xl border-none text-sm outline-none"
+                            />
+                        </div>
 
-    <p>Nombre Completo: Ej. Full name</p>
-    <p>Correo Electronico: email@gmail.com</p>
-    <p>Direccion: Calle, Numero, Piso</p>
-    <p>Codigo postal:</p>
-    <p>Ciudad:</p>
+                        <div
+                            class="flex flex-col gap-2 flex-[1_1_calc(50%-1.5rem)] min-w-[140px]"
+                        >
+                            <p
+                                class="text-[10px] font-bold uppercase text-slate-500"
+                            >
+                                Ciudad
+                            </p>
+                            <input
+                                type="text"
+                                placeholder="Madrid"
+                                class="bg-slate-100 p-4 rounded-xl border-none text-sm outline-none"
+                            />
+                        </div>
+                    </div>
+                </div>
 
-    METODO DE PAGO
+                <div>
+                    <p
+                        class="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-6"
+                    >
+                        Método de pago
+                    </p>
+                    <div class="flex gap-4">
+                        <div
+                            class="flex-1 border-2 border-blue-600 bg-white p-6 rounded-2xl flex flex-col items-center gap-3 relative"
+                        >
+                            <div
+                                class="absolute top-3 right-3 w-4 h-4 rounded-full border-4 border-blue-600 bg-blue-600"
+                            >
+                            </div>
+                            <p class="text-2xl">💳</p>
+                            <p class="font-bold text-sm">Tarjeta</p>
+                        </div>
+                        <div
+                            class="flex-1 border border-gray-200 bg-white p-6 rounded-2xl flex flex-col items-center gap-3 opacity-50"
+                        >
+                            <p class="text-2xl">📱</p>
+                            <p class="font-bold text-sm">Apple Pay</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <p>.Tarjeta .Apple Pay .Transferencia</p>
+            <div class="flex-1">
+                <div class="bg-slate-100 p-8 rounded-3xl sticky top-6">
+                    <p class="text-xl font-bold mb-6">Resumen</p>
 
-    <p>Resumen</p>
+                    <div class="flex flex-col gap-4 text-slate-500 mb-6">
+                        <div class="flex justify-between">
+                            <p>Subtotal</p><p class="font-bold text-slate-900">
+                                1.007,44 €
+                            </p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>IVA (21%)</p><p class="font-bold text-slate-900">
+                                211,56 €
+                            </p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>Envío</p><p
+                                class="font-bold text-blue-600 italic"
+                            >
+                                Gratis
+                            </p>
+                        </div>
+                    </div>
 
-    Subtotal
+                    <div class="border-t border-gray-200 pt-6 mb-8">
+                        <div class="flex justify-between items-end">
+                            <p class="font-bold text-lg">Total</p>
+                            <div class="text-right">
+                                <p class="text-3xl font-bold">1.219,00 €</p>
+                                <p
+                                    class="text-[10px] text-gray-400 font-bold uppercase"
+                                >
+                                    O 50,79 €/mes*
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
-    <p>Impuestos(IVA 21%) 211,56$</p>
-    <p>Envio gratis</p>
-    <p>TOTAL</p>
-    1430,56$/ 119,21$/ Mes
-    <p>Finalizar pedido</p>
-    Pago 100% Seguro y Encriptado Nota del editor
-
-    <p>
-        La presicion no es un accidente. Cada iPhone en tu Carrito ha sido
-        Diseñado con una tolerancia de micras. Estas a un paso de la ingenieria
-        mas avanzada del mundo.
-    </p>
-
-    <p>The precision editorial</p>
-
-    La curaduria definitiva del diseño tecnologico
-
-    <p>MODELOS</p>
-
-    iPhone 15 Pro Max iPhone 14 iPhone SE Soporte
-
-    <p>Contact Support Privacy Policy</p>
-
-    <p>Social</p>
-
-    <p>TWITTER INSTAGRAM YOUTUBE</p>
-
-    <p>c 2026 The precision editorial. All Rights reserved</p>
+                    <button
+                        class="w-full bg-slate-800 text-white font-bold py-5 rounded-full hover:bg-slate-900 transition"
+                    >
+                        Finalizar pedido
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
 </Layout>
