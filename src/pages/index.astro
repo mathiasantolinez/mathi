@@ -5,5 +5,151 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-	
+	<section>
+	<div class="relative flex items-center justify-center min-h-screen bg-[#1d1d1f] overflow-hidden">
+  
+  <img 
+    src="/catalogo1.png" 
+    class="absolute inset-0 w-full h-full object-cover opacity-40" 
+    alt="Background"
+  />
+
+  <div class="relative z-10 bg-white flex flex-col items-center gap-6 px-12 py-16 rounded-[3rem] shadow-2xl max-w-[350px] w-full">
+    
+    <img 
+      src="/iphone2.png" 
+      alt="iPhone 15 Pro" 
+      class="w-48 h-auto relative z-10" 
+    />
+
+    <div class="h-20"></div>
+
+    <div class="flex items-center gap-6 relative z-30">
+      <button class="bg-[#636366] text-white px-8 py-2.5 rounded-full text-sm font-bold hover:bg-black transition-all">
+        Comprar
+      </button>
+      <a href="#" class="text-[#0066cc] text-sm font-bold flex items-center gap-1">
+        Más información <span class="text-[10px]">▶</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="absolute z-20 w-full flex justify-center pointer-events-none">
+    <p class="text-black md:text-8xl text-6 font-bold tracking-tight text-center whitespace-nowrap opacity-90">
+      Titanio. Robusto. Ligero.
+    </p>
+  </div>
+</div>
+</section>
+<section>
+	<div class="bg-[#f5f5f7] min-h-screen p-8 flex justify-center items-center">
+  
+  <div class="flex flex-col md:flex-row gap-6 w-full max-w-7xl">
+    
+    <div class="bg-[#fbfbfb] flex flex-col justify-between flex-1 p-10 rounded-3xl min-h-[400px]">
+      <div class="flex flex-col gap-2">
+        <p class="text-3xl font-semibold text-black">iPhone 15</p>
+        <p class="text-lg text-gray-600 max-w-sm">Nueva cámara. Nuevo diseño. Nuevas posibilidades.</p>
+      </div>
+      <a href="#" class="text-[#0066cc] text-sm font-medium flex items-center gap-1 hover:underline">
+        Ver modelos <span class="text-[10px]">▶</span>
+      </a>
+    </div>
+
+    <div class="flex flex-col gap-6 flex-[1.2]">
+      
+      <div class="bg-[#d2d9e1] flex items-center gap-8 rounded-3xl overflow-hidden px-10">
+        <div class="flex flex-col gap-1.5 py-12 flex-1">
+          <p class="text-xl font-semibold text-black">iPhone 14</p>
+          <p class="text-sm text-gray-700">Tan increíble como siempre.</p>
+          <a href="#" class="text-[#0066cc] text-xs font-medium flex items-center gap-1 hover:underline mt-2">
+            Comprar <span class="text-[8px]">▶</span>
+          </a>
+        </div>
+        <div class="bg-[#f0e3d9] h-full flex justify-center items-center px-4">
+          <img 
+            src="/catalogo3.png" 
+            alt="iPhone 14" 
+            class="h-40 w-auto object-contain"
+          />
+        </div>
+      </div>
+
+      <div class="bg-[#616161] flex items-center gap-8 rounded-3xl overflow-hidden px-10">
+        <div class="flex flex-col gap-2 py-10 flex-1">
+          <p class="text-xl font-semibold text-white">iPhone SE</p>
+          <p class="text-sm text-gray-100">Mucho amor. Por menos.</p>
+          <button class="bg-white text-black px-4 py-2 rounded-full text-xs font-medium self-start mt-2 hover:bg-gray-100 transition-colors">
+            Ver precio
+          </button>
+        </div>
+        <div class="bg-[#d7d7d7] h-full flex justify-center items-center px-4">
+          <img 
+            src="/catalogo4.png" 
+            alt="iPhone SE" 
+            class="h-44 w-auto object-contain"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<section>
+	<div class="bg-[#f5f5f7] py-20 px-6 flex flex-col items-center">
+  
+  <div class="max-w-7xl w-full flex flex-col gap-2 mb-12">
+    <p class="text-[#0066cc] text-xs font-bold uppercase tracking-widest">
+      Innovación
+    </p>
+    <p class="text-4xl font-semibold text-[#1d1d1f]">
+      Tecnología de Vanguardia
+    </p>
+  </div>
+
+  <div class="max-w-7xl w-full flex flex-wrap lg:flex-nowrap gap-6 justify-center">
+    
+    <div class="bg-white flex flex-col gap-4 p-8 rounded-2xl flex-1 shadow-sm">
+      <div class="text-[#0066cc] w-8 h-8">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-full h-full"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+      </div>
+      <p class="text-xl font-bold text-[#1d1d1f]">Cámara Pro</p>
+      <p class="text-[#6e6e73] text-sm leading-relaxed">
+        Un sistema de cámaras triple con sensor principal de 48 MP diseñado para capturar detalles increíbles en cualquier luz.
+      </p>
+    </div>
+
+    <div class="bg-white flex flex-col gap-4 p-8 rounded-2xl flex-1 shadow-sm">
+      <div class="text-[#0066cc] w-8 h-8">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-full h-full"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
+      </div>
+      <p class="text-xl font-bold text-[#1d1d1f]">Chip A17 Pro</p>
+      <p class="text-[#6e6e73] text-sm leading-relaxed">
+        El primer chip de 3 nanómetros de la industria. Un rendimiento gráfico que redefine lo que un móvil puede hacer.
+      </p>
+    </div>
+
+    <div class="bg-white flex flex-col gap-4 p-8 rounded-2xl flex-1 shadow-sm">
+      <div class="text-[#0066cc] w-8 h-8">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-full h-full"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+      </div>
+      <p class="text-xl font-bold text-[#1d1d1f]">Batería de larga duración</p>
+      <p class="text-[#6e6e73] text-sm leading-relaxed">
+        Optimización total de hardware y software para que tu iPhone te acompañe durante todo el día, y más allá.
+      </p>
+    </div>
+
+    <div class="bg-white flex flex-col gap-4 p-8 rounded-2xl flex-1 shadow-sm">
+      <div class="text-[#0066cc] w-8 h-8">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-full h-full"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+      </div>
+      <p class="text-xl font-bold text-[#1d1d1f]">Pantalla Super Retina</p>
+      <p class="text-[#6e6e73] text-sm leading-relaxed">
+        La pantalla más brillante y nítida jamás vista en un iPhone, con ProMotion de hasta 120Hz.
+      </p>
+    </div>
+
+  </div>
+</div>
+</section>
 </Layout>
